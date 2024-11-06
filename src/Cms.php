@@ -585,8 +585,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->metric)) {
             $body['Metric'] = $request->metric;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $body['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $body['Namespace'] = $request->namespace;
         }
         $req = new OpenApiRequest([
             'body' => OpenApiUtilClient::parseToMap($body),
@@ -907,8 +907,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->description)) {
             $query['Description'] = $request->description;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->namespaceRegion)) {
             $query['NamespaceRegion'] = $request->namespaceRegion;
@@ -1055,8 +1055,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->groupId)) {
             $query['GroupId'] = $request->groupId;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->SLSProcessConfig)) {
             $query['SLSProcessConfig'] = $request->SLSProcessConfig;
@@ -1219,8 +1219,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->name)) {
             $query['Name'] = $request->name;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->scopeType)) {
             $query['ScopeType'] = $request->scopeType;
@@ -1822,8 +1822,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->metric)) {
             $body['Metric'] = $request->metric;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $body['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $body['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->period)) {
             $body['Period'] = $request->period;
@@ -2370,8 +2370,8 @@ class Cms extends OpenApiClient
     {
         Utils::validateModel($request);
         $query = [];
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         $req = new OpenApiRequest([
             'query' => OpenApiUtilClient::query($query),
@@ -2473,8 +2473,8 @@ class Cms extends OpenApiClient
     {
         Utils::validateModel($request);
         $query = [];
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->targetUserId)) {
             $query['TargetUserId'] = $request->targetUserId;
@@ -3184,8 +3184,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->metricName)) {
             $query['MetricName'] = $request->metricName;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->page)) {
             $query['Page'] = $request->page;
@@ -3285,8 +3285,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->metricName)) {
             $query['MetricName'] = $request->metricName;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->pageNumber)) {
             $query['PageNumber'] = $request->pageNumber;
@@ -3388,8 +3388,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->metricName)) {
             $query['MetricName'] = $request->metricName;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->pageNumber)) {
             $query['PageNumber'] = $request->pageNumber;
@@ -3491,8 +3491,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->metricName)) {
             $query['MetricName'] = $request->metricName;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->pageNumber)) {
             $query['PageNumber'] = $request->pageNumber;
@@ -4499,8 +4499,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->end)) {
             $query['End'] = $request->end;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->period)) {
             $query['Period'] = $request->period;
@@ -4567,8 +4567,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->keyword)) {
             $query['Keyword'] = $request->keyword;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->pageNumber)) {
             $query['PageNumber'] = $request->pageNumber;
@@ -4696,8 +4696,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->keyword)) {
             $query['Keyword'] = $request->keyword;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->pageNumber)) {
             $query['PageNumber'] = $request->pageNumber;
@@ -4881,8 +4881,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->metricName)) {
             $query['MetricName'] = $request->metricName;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->period)) {
             $query['Period'] = $request->period;
@@ -4966,8 +4966,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->metricName)) {
             $query['MetricName'] = $request->metricName;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->nextToken)) {
             $query['NextToken'] = $request->nextToken;
@@ -5052,8 +5052,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->metricName)) {
             $query['MetricName'] = $request->metricName;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->nextToken)) {
             $query['NextToken'] = $request->nextToken;
@@ -5120,8 +5120,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->metricName)) {
             $query['MetricName'] = $request->metricName;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->pageNumber)) {
             $query['PageNumber'] = $request->pageNumber;
@@ -5188,8 +5188,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->name)) {
             $query['Name'] = $request->name;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->order)) {
             $query['Order'] = $request->order;
@@ -5306,8 +5306,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->metricName)) {
             $query['MetricName'] = $request->metricName;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->page)) {
             $query['Page'] = $request->page;
@@ -5573,8 +5573,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->metricName)) {
             $query['MetricName'] = $request->metricName;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->orderDesc)) {
             $query['OrderDesc'] = $request->orderDesc;
@@ -8140,8 +8140,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->description)) {
             $query['Description'] = $request->description;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->spec)) {
             $query['Spec'] = $request->spec;
@@ -8339,8 +8339,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->name)) {
             $query['Name'] = $request->name;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->scopeType)) {
             $query['ScopeType'] = $request->scopeType;
@@ -9246,8 +9246,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->metricName)) {
             $query['MetricName'] = $request->metricName;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->ruleName)) {
             $query['RuleName'] = $request->ruleName;
@@ -9331,8 +9331,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->metricName)) {
             $query['MetricName'] = $request->metricName;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->noDataPolicy)) {
             $query['NoDataPolicy'] = $request->noDataPolicy;
@@ -9417,8 +9417,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->metricList)) {
             $query['MetricList'] = $request->metricList;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         $req = new OpenApiRequest([
             'query' => OpenApiUtilClient::query($query),
@@ -9748,8 +9748,8 @@ class Cms extends OpenApiClient
         if (!Utils::isUnset($request->metricName)) {
             $query['MetricName'] = $request->metricName;
         }
-        if (!Utils::isUnset($request->namespace_)) {
-            $query['Namespace'] = $request->namespace_;
+        if (!Utils::isUnset($request->namespace)) {
+            $query['Namespace'] = $request->namespace;
         }
         if (!Utils::isUnset($request->noDataPolicy)) {
             $query['NoDataPolicy'] = $request->noDataPolicy;
